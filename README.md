@@ -13,4 +13,4 @@ A dark theme inspired by Skeletor from He-Man and the Masters of Universe.
 
 #Screenshots
 
-![Screenshot](screenshot.png)
+![](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshot.png)
