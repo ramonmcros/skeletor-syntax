@@ -1,6 +1,6 @@
 # Skeletor Syntax
 
-A dark theme inspired by Skeletor from He-Man and the Masters of Universe.
+A dark theme inspired by Skeletor from He-Man and the Masters of the Universe.
 
 # Installation
 
