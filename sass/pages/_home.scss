@@ -1,0 +1,21 @@
+// ==============================================================
+// _home.scss *****
+// ==============================================================
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+
+  @media all and (max-width: 800px) {
+    width: 95%;
+  }
+}
+
+.screenshot {
+  @include center-block;
+  @include img-responsive;
+  margin-bottom: 50px;
+  width: 769px;
+}

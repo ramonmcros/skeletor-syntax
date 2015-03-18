@@ -1,0 +1,50 @@
+// ==============================================================
+// _variables.scss *****
+// ==============================================================
+
+// COLORS
+// ==============================================================
+
+// Descriptive colors
+$blue: #5287fd;
+$purple: #331C64;//#53449f;
+$yellow: #f3e4a2;
+
+// Main color palette
+$color-primary: $purple;
+$color-accent: $yellow;
+
+// Background
+$color-background: $blue;
+
+// Text
+$color-text: $color-primary;
+$color-text-heading: $color-primary;
+
+
+// Links
+$color-link: $color-primary;
+$color-link-hover: $yellow;
+
+// TYPOGRAPHY
+// ==============================================================
+
+// Sizes
+$font-size-small: 12px;
+$font-size-regular: 16px;
+$font-size-large: 24px;
+$font-size-x-large: 32px;
+$font-size-xx-large: 48px;
+$font-size-xxx-large: 82px;
+
+// Weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-ultra-bold: 900;
+
+// Families
+$font-family-text: 'liberation_sansregular', Arial, sans-serif;
+$font-family-display: 'liberation_serifbold', Georgia, serif;
+$font-family-display-sans: 'liberation_sansbold', Arial, sans-serif;
+$font-family-monospace: 'liberation_monoregular', Courier;

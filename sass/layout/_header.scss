@@ -1,0 +1,11 @@
+// ==============================================================
+// _header.scss *****
+// ==============================================================
+
+.skeletor {
+  @include center-block;
+  @include img-responsive;
+}
+.title {
+  text-align: center;
+}

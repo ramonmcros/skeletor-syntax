@@ -1,0 +1,11 @@
+{
+  "name": "skeletor-syntax",
+  "description": "Skeletor Syntax",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}

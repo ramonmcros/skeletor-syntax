@@ -1,0 +1,101 @@
+// ==============================================================
+// _mixins.scss *****
+// ==============================================================
+
+// Sticky-footer
+@mixin sticky-footer($footer-height, $wrapper-selector: unquote('#page'),
+$container-selector: unquote('#content'),
+$footer-selector: unquote('#colophon')) {
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #{$wrapper-selector} {
+    min-height: 100%;
+    position: relative;
+  }
+
+  #{$container-selector} {
+    padding-bottom: $footer-height;
+    overflow: hidden;
+  }
+
+  #{$footer-selector} {
+    clear: both;
+    height: $footer-height;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+// Responsive image
+@mixin img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+// Center block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix {
+  *zoom: 1;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Word break
+@mixin word-break {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+// Ellipsis
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+// Visually hidden
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Remove bullets from lists
+@mixin no-bullets {
+  list-style: none;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
