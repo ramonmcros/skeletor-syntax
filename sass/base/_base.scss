@@ -17,6 +17,10 @@ body {
   font-size: $font-size-large;
   background: $color-background;
   font-family: $font-family-text;
+
+  @media all and (max-width: 500px) {
+    font-size: $font-size-regular;
+  }
 }
 
 // TEXT

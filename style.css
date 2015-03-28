@@ -272,6 +272,11 @@ body {
   background: #5287fd;
   font-family: "liberation_sansregular", Arial, sans-serif;
 }
+@media all and (max-width: 500px) {
+  body {
+    font-size: 20px;
+  }
+}
 
 p {
   color: #331C64;
@@ -303,7 +308,7 @@ h4 {
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h6 {
@@ -369,12 +374,16 @@ code {
 .title {
   text-align: center;
 }
+@media all and (max-width: 500px) {
+  .title {
+    font-size: 74px;
+  }
+}
 
 .wrapper {
   width: 70%;
   margin: 0 auto;
   display: block;
-  overflow: hidden;
 }
 @media all and (max-width: 800px) {
   .wrapper {
