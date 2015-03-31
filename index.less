@@ -141,16 +141,12 @@ atom-text-editor .search-results .marker.current-result .region,
   &.php {
     color: @orchid;
   }
-
-  &.other.symbol {
-    color: @blue-gray;
-  }
 }
 
 .variable {
   color: @light-blue;
 
-  &.parameter {
+  &.parameter, {
     color: @orange;
 
     &.css,
@@ -171,6 +167,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .string {
   color: @blue;
+
+  .punctuation .source.ruby {
+    color: @blue-gray;
+  }
 
   &.regexp {
     color: @blue;
@@ -235,11 +235,19 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @purple;
     }
   }
+
+  &.ruby {
+    color: @orchid;
+  }
 }
 
 .entity {
   &.name.class, &.name.type.class {
     color: @yellow;
+
+    &.ruby {
+      color: @green;
+    }
   }
 
   &.name.section {
@@ -404,6 +412,14 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .constant.numeric.yaml {
   color: @orchid;
+}
+
+.variable.other.instance.ruby {
+  color: @orange;
+
+  .punctuation {
+    color: @orange;
+  }
 }
 
 atom-text-editor[mini] .scroll-view,
