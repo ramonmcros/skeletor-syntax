@@ -1,0 +1,16 @@
+// ==============================================================
+// _license.scss *****
+// ==============================================================
+
+.frame  {
+  border: 8px solid $color-primary;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  box-shadow: 0 0 0 4px $color-background,
+              0 0 0 8px $color-primary;
+
+  @media all and (max-width: 800px) {
+    margin: 40px 10px 60px 10px;
+  }
+}

@@ -403,4 +403,17 @@ code {
   width: 769px;
 }
 
+.frame {
+  border: 8px solid #331C64;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  box-shadow: 0 0 0 4px #5287fd, 0 0 0 8px #331C64;
+}
+@media all and (max-width: 800px) {
+  .frame {
+    margin: 40px 10px 60px 10px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
