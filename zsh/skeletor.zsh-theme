@@ -1,4 +1,4 @@
-# Skeletor Syntax v0.2.4
+# Skeletor Syntax v0.2.5
 #
 # https://github.com/ramonmcros/skeletor-syntax
 #
