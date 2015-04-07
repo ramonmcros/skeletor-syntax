@@ -403,6 +403,10 @@ code {
   width: 769px;
 }
 
+article:last-child {
+  margin-bottom: 100px;
+}
+
 .frame {
   border: 8px solid #331C64;
   padding: 20px;
