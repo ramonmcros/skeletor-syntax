@@ -118,6 +118,9 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @orchid;
     }
   }
+  &.other.sql {
+    color: @orchid;
+  }
 }
 
 .storage {
@@ -131,7 +134,8 @@ atom-text-editor .search-results .marker.current-result .region,
   &.type.class {
     color: @green;
   }
-
+  
+  &.sql,
   &.jade {
     color: @green;
     font-style: italic;
@@ -237,6 +241,10 @@ atom-text-editor .search-results .marker.current-result .region,
 .support {
   &.function  {
     color: @blue;
+
+    &.sql {
+      color: @green;
+    }
 
     &.js,
     &.scss {
