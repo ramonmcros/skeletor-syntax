@@ -1,9 +1,9 @@
 {
-  "name": "skeletor-syntax",
+  "name": "skeletor-syntax-crisp",
   "theme": "syntax",
-  "version": "0.2.6",
+  "version": "0.1.0",
   "description": "A dark theme for Atom inspired by Skeletor from He-Man and the Masters of the Universe",
-  "repository": "https://github.com/ramonmcros/skeletor-syntax",
+  "repository": "https://github.com/olegakbarov/skeletor-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
