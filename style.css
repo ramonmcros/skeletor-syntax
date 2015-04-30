@@ -383,7 +383,8 @@ code {
 }
 
 .wrapper {
-  width: 70%;
+  width: 70.31828%;
+  max-width: 950px;
   margin: 0 auto;
   display: block;
 }

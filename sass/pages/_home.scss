@@ -3,7 +3,8 @@
 // ==============================================================
 
 .wrapper {
-  width: 70%;
+  width: percentage(950px / 1351px);
+  max-width: 950px;
   margin: 0 auto;
   display: block;
 
