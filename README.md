@@ -72,4 +72,6 @@ Requires a terminal with 256 colors support.
 
 * Theme inspired by [Skeletor](http://en.wikipedia.org/wiki/Skeletor) and [@zenorocha's dracula-theme](https://github.com/zenorocha/dracula-theme).
 
+* Increased font sizes for headers taken from [@nylki's pen-paper-coffee-syntax](https://github.com/nylki/pen-paper-coffee-syntax).
+
 * ZSH theme based on [@robbyrussell's theme](https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/robbyrussell.zsh-theme).
