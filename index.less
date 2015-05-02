@@ -361,6 +361,50 @@ atom-text-editor .search-results .marker.current-result .region,
   &.raw.inline {
     color: @blue-gray;
   }
+
+  &.heading {
+       position: relative;
+
+       &.heading-1 {
+           font-size: 135%;
+           bottom: 0.35em;
+           opacity: 1.0;
+       }
+
+       &.heading-2 {
+           font-size: 125%;
+           bottom: 0.25em;
+           opacity: 0.95;
+       }
+
+       &.heading-3 {
+           font-size: 115%;
+           bottom: 0.15em;
+           opacity: 0.90;
+       }
+
+       &.heading-4,
+       &.heading-5,
+       &.heading-6 {
+           font-size: 105%;
+           bottom: 0.05em;
+           opacity: 0.85;
+       }
+   }
+}
+
+//create space for H1 at top of document
+atom-text-editor[data-grammar="source gfm"]:not(.mini),
+atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow{
+    .gutter,
+    .scroll-view {
+      padding-top: 0.75em;
+      .line-number-0 {
+        padding-top: 0.75em;
+        top: -0.75em !important; //overrule inline style
+      }
+
+  }
 }
 
 .property-name.css {
