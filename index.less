@@ -396,7 +396,7 @@ atom-text-editor .search-results .marker.current-result .region,
 //create space for H1 at top of document
 atom-text-editor[data-grammar="source gfm"]:not(.mini),
 atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow {
-  
+
   .gutter,
   .scroll-view {
     padding-top: 0.75em;
@@ -444,6 +444,21 @@ atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow {
 
 .code.gfm .link {
   color: @blue;
+}
+
+.critic {
+  &.addition {
+    color: @green;
+  }
+  &.deletion {
+    color: @red;
+  }
+  &.substitution {
+    color: @orange;
+  }
+  &.highlight {
+    color: @yellow;
+  }
 }
 
 .entity.name.tag.yaml {
