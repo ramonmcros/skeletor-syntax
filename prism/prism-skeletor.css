@@ -4,7 +4,7 @@
  *
  * Code licensed under the MIT license
  */
- 
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #dce7fd;
@@ -163,6 +163,9 @@ pre[class*="language-"] {
 }
 .language-yaml .token.atrule {
   color: #bd93f9;
+}
+.language-yaml .token.important {
+  color: #84fba2;
 }
 
 .language-markdown .token.title.important {
