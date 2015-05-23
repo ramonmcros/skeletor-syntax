@@ -1,6 +1,6 @@
 # Skeletor Syntax
 
-A dark theme for Atom and Zsh inspired by Skeletor from He-Man and the Masters of the Universe.
+A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com) and [Zsh](http://www.zsh.org) inspired by Skeletor from He-Man and the Masters of the Universe.
 
 **[http://ramonmcros.github.io/skeletor-syntax/](http://ramonmcros.github.io/skeletor-syntax/)**
 
@@ -10,6 +10,7 @@ A dark theme for Atom and Zsh inspired by Skeletor from He-Man and the Masters o
 ## Table of contents
 
 * [Atom](#atom)
+* [Prism](#prism)
 * [Zsh](#zsh)
 * [Credits](#credits)
 
@@ -29,6 +30,42 @@ A dark theme for Atom and Zsh inspired by Skeletor from He-Man and the Masters o
 ![atom-screenshot1](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/atom-screenshot1.png)
 
 ![atom-screenshot2](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/atom-screenshot2.png)
+
+## Prism
+
+### Installation
+1. [Download](https://github.com/ramonmcros/skeletor-syntax/archive/master.zip) the theme.
+
+2. Link `prism.js` and `prism-skeletor.css`.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+ ...
+    <link href="css/skeletor-prism.css" rel="stylesheet" />
+</head>
+<body>
+ ...
+    <!-- after all your content -->
+    <script src="prism.js"></script>
+</body>
+</html>
+```
+
+### Supported Languages
+
+* HTML
+* CSS
+* Sass (SCSS syntax)
+* Javascript
+* PHP
+* Markdown
+* YAML
+
+### Plugins
+
+* [Line Numbers](http://http://prismjs.com/plugins/line-numbers/)
 
 ## Zsh
 
