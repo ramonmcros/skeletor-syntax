@@ -4,7 +4,6 @@
  *
  * Code licensed under the MIT license
  */
-
 code[class*="language-"],
 pre[class*="language-"] {
   color: #dce7fd;
@@ -175,10 +174,10 @@ pre[class*="language-"] {
   color: #84fba2;
 }
 .language-markdown .token.url {
-  color: #f3e4a2;
+  color: #93b4ff;
 }
 .language-markdown .token.url .variable {
-  color: #93b4ff;
+  color: #f3e4a2;
 }
 
 pre.line-numbers {
