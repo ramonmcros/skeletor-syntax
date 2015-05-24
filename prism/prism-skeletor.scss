@@ -119,7 +119,7 @@ pre[class*="language-"] {
 }
 
 .token.regex {
-  color: $blue-gray;
+  color: $green;
 }
 .token.important {
 	color: $orchid;
@@ -162,7 +162,7 @@ pre[class*="language-"] {
 
 .language-javascript {
   .token.keyword {
-    color: $green;
+    color: $yellow;
   }
 
   .token.class-name {
