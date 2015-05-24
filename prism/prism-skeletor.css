@@ -173,6 +173,9 @@ pre[class*="language-"] {
 .language-markdown .token.code {
   color: #84fba2;
 }
+.language-markdown .token.list.punctuation {
+  color: #93b4ff;
+}
 .language-markdown .token.url {
   color: #93b4ff;
 }
@@ -219,3 +222,5 @@ pre.line-numbers > code {
   padding-right: 0.8em;
   text-align: right;
 }
+
+/*# sourceMappingURL=prism-skeletor.css.map */

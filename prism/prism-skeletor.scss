@@ -205,6 +205,10 @@ pre[class*="language-"] {
 		color: $green;
 	}
 
+	.token.list.punctuation {
+		color: $blue;
+	}
+
 	.token.url {
 		color: $blue;
 
