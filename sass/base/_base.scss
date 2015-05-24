@@ -78,9 +78,7 @@ a {
 // LISTS
 // ==============================================================
 
-ul {
-  @include no-bullets;
-}
+
 
 ol,
 ul {
@@ -129,4 +127,17 @@ button {
 code {
   background: $color-accent;
   font-family: $font-family-monospace;
+}
+
+pre[class*="language-"] {
+  border-radius: 0 !important;
+  line-height: 1.2 !important;
+}
+
+pre {
+  code {
+    background: $color-code-background;
+    font-size: 20px;
+    display: block;
+  }
 }

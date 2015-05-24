@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skeletor Syntax</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="prism-skeletor.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="wrapper prism-page">
+    <header>
+      <h1 class="title">Examples</h1>
+      <a href="index.html">
+        <img class="skeletor" src="img/skeletor.png"/>
+      </a>
+    </header>
+    <article>
+      <h2>HTML</h2>
+      <p>
+        To use this language, use the class <code>language-markup</code>.
+      </p>
+      <h3>Markup</h3>
+      <pre class="language-markup"><code>
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+...
+&lt;link href="css/skeletor-prism.css" rel="stylesheet" />
+&lt;/head>
+&lt;body>
+...
+&lt;!-- after all your content -->
+&lt;script src="prism.js"></script>
+&lt;/body>
+&lt;/html></code></pre>
+      <h3>Namespaces</h3>
+      <pre class="language-markup"><code>
+&lt;html:p foo:bar="baz" foo:weee>&lt;/html:p></code></pre>
+    </article>
+    <article>
+      <h2>CSS</h2>
+      <p>
+        To use this language, use the class <code>language-css</code>.
+      </p>
+      <h3>Empty rule</h3>
+      <pre class="language-css"><code>
+ul,
+ol {}</code></pre>
+      <h3>Simple rule</h3>
+      <pre class="language-css"><code>
+p { color: red; }</code></pre>
+      <h3>Important rule</h3>
+      <pre class="language-css"><code>
+p { color: red !important; }</code></pre>
+      <h3>@ rule</h3>
+      <pre class="language-css"><code>
+@media screen and (min-width: 100px) {}</code></pre>
+      <h3>LESS variable</h3>
+      <pre class="language-css"><code>
+@main-color: red;
+
+.foo {
+	background: @main-color;
+}</code></pre>
+      <h3>Comment</h3>
+      <pre class="language-css"><code>
+/* Simple comment here */</code></pre>
+      <h3>String</h3>
+      <pre class="language-css"><code>
+content: 'foo';</code></pre>
+      <h3>URL</h3>
+      <pre class="language-css"><code>
+content: url(foo.png);</code></pre>
+    </article>
+    <article>
+      <h2>Sass</h2>
+      <p>
+        To use this language, use the class <code>language-scss</code>.
+      </p>
+      <h3>At-rules</h3>
+      <pre class="language-scss"><code>
+@import "foo.scss";
+
+@media (min-width: 600px) {}
+.seriousError {
+    @extend .error;
+}
+
+@for $i from 1 through 3 {}</code></pre>
+      <h3>Compass URLs</h3>
+      <pre class="language-scss"><code>
+@font-face {
+	font-family: "opensans";
+	src: font-url("opensans.ttf");
+}</code></pre>
+      <h3>Variables</h3>
+      <pre class="language-scss"><code>
+$width: 5em;
+
+#main {
+    width: $width;
+}</code></pre>
+      <h3>Interpolations</h3>
+      <pre class="language-scss"><code>
+p.#{$name} {
+    #{$attr}-color: blue;
+}</code></pre>
+    </article>
+    <article>
+      <h2>Javascript</h2>
+      <p>
+        To use this language, use the class <code>language-javascript</code>.
+      </p>
+      <h3>Variable assignment</h3>
+      <pre class="language-javascript"><code>
+var foo = "bar", baz = 5;</code></pre>
+      <h3>Operators</h3>
+      <pre class="language-javascript"><code>
+(1 + 2 * 3)/4 >= 3 && 4 < 5 || 6 > 7</code></pre>
+      <h3>Indented code</h3>
+      <pre class="language-javascript"><code>
+if (true) {
+	while (true) {
+		doSomething();
+	}
+}</code></pre>
+      <h3>Regex</h3>
+      <pre class="language-javascript"><code>
+var foo = /([^/])\/(\\?.|\[.+?])+?\/[gim]{0,3}/g;</code></pre>
+      <h3>Nested strings</h3>
+      <pre class="language-javascript"><code>
+var foo = "foo", bar = "He \"said\" 'hi'!"</code></pre>
+      <h3>A division operator on the same line as a regex</h3>
+      <pre class="language-javascript"><code>
+var foo = 1/2, bar = /a/g;
+var foo = /a/, bar = 3/4;</code></pre>
+    </article>
+    <article>
+      <h2>PHP</h2>
+      <p>
+        To use this language, use the class <code>language-php</code>.
+      </p>
+      <h3>Variables</h3>
+      <pre class="language-php"><code>
+$some_var = 5;
+$otherVar = "Some text";
+$null = null;
+$false = false;</code></pre>
+      <h3>Functions</h3>
+      <pre class="language-php"><code>
+$json = json_encode($my_object);
+$array1 = array("a" => "green", "red", "blue", "red");
+$array2 = array("b" => "green", "yellow", "red");
+$result = array_diff($array1, $array2);</code></pre>
+      <h3>Constants</h3>
+      <pre class="language-php"><code>
+define('MAXSIZE', 42);
+echo MAXSIZE;
+json_decode($json, false, 512, JSON_BIGINT_AS_STRING);</code></pre>
+      <h3>PHP 5.3+ support</h3>
+      <pre class="language-php"><code>
+namespace my\name;
+$c = new \my\name\MyClass;
+$arr = [1,2,3];
+trait ezcReflectionReturnInfo {
+    function getReturnType() { /*1*/ }
+    function getReturnDescription() { /*2*/ }
+}
+function gen_one_to_three() {
+    for ($i = 1; $i <= 3; $i++) {
+        // Note that $i is preserved between yields.
+        yield $i;
+    }
+}</code></pre>
+      <h3>PHP embedded in HTML</h3>
+      <pre class="language-php"><code>
+&lt;div class="&lt;?php echo $a ? 'foo' : 'bar'; ?>">
+&lt;?php if($var < 42) {
+    echo "Something";
+} else {
+    echo "Something else";
+} ?>
+&lt;/div></code></pre>
+    </article>
+    <article>
+      <h2>Markdown</h2>
+      <p>
+        To use this language, use the class <code>language-markdown</code>.
+      </p>
+      <h3>Titles</h3>
+      <pre class="language-markdown"><code>
+Title 1
+==
+
+Title 2
+-------
+
+# Title 1
+## Title 2
+### Title 3
+#### Title 4
+##### Title 5
+###### Title 6</code></pre>
+      <h3>Bold and italic</h3>
+      <pre class="language-markdown"><code>
+*Italic*
+**Bold on
+multiple lines**
+*Italic on
+multiple lines too*
+__It also works with underscores__
+_It also works with underscores_
+
+__An empty line
+
+is not allowed__</code></pre>
+      <h3>Links</h3>
+      <pre class="language-markdown"><code>
+[Prism](http://www.prismjs.com)
+[Prism](http://www.prismjs.com "Prism")
+
+[prism link]: http://www.prismjs.com (Prism)
+[Prism] [prism link]</code></pre>
+      <h3>Lists and quotes</h3>
+      <pre class="language-markdown"><code>
+* This is
+* an unordered list
+
+1. This is an
+2. ordered list
+
+* *List item in italic*
+* **List item in bold**
+* [List item as a link](http://example.com "This is an example")
+
+> This is a quotation
+>> With another quotation inside
+> _italic here_, __bold there__
+> And a [link](http://example.com)</code></pre>
+      <h3>Code</h3>
+      <pre class="language-markdown"><code>
+Inline code between backticks `<p>Paragraph</p>`
+
+    some_code(); /* Indented
+    with four spaces */
+
+	some_code(); /* Indented
+	with a tab */</code></pre>
+    </article>
+    <article>
+      <h2>YAML</h2>
+      <p>
+        To use this language, use the class <code>language-yaml</code>.
+      </p>
+      <h3>Full example</h3>
+      <pre class="language-yaml"><code>
+%YAML 1.2
+--- !&lt;tag:clarkevans.com,2002:invoice>
+invoice: 34843
+date   : 2001-01-23
+bill-to: &lt;id001
+  given  : Chris
+  family : Dumars
+  address:
+    lines: |
+      458 Walkman Dr.
+      Suite #292
+    city    : Royal Oak
+    state   : MI
+    postal  : 48046
+ship-to:
+  &lt;&lt;: *id001
+  product:
+    - sku         : BL394D
+      quantity    : 4
+      description : Basketball
+      price       : 450.00
+    - sku         : BL4438H
+      quantity    : 1
+      description : Super Hoop
+      price       : 2392.00
+tax  : 251.42
+total: 4443.52
+comments:
+    Late afternoon is best.
+    Backup contact is Nancy</code></pre>
+  </div>
+  <script type="text/javascript" src="js/prism.js"></script>
+</body>
+</html>

@@ -6,17 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Skeletor Syntax</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="prism-skeletor.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="wrapper">
     <header>
       <h1 class="title">Skeletor Syntax</h1>
       <p>
-        A dark theme for <a href="http://atom.io">Atom</a> and
-        <a href="http://www.zsh.org">Zsh</a> inspired by Skeletor from He-Man and
+        A dark theme for <a href="http://atom.io" target="_blank">Atom</a>, <a href="http://prismjs.com/" target="_blank">Prism</a> and
+        <a href="http://www.zsh.org" target="_blank" >Zsh</a> inspired by Skeletor from He-Man and
         the Masters of the Universe.
       </p>
-      <img class="skeletor" src="img/skeletor.png"/>
+      <a href="index.html">
+        <img class="skeletor" src="img/skeletor.png"/>
+      </a>
       <p>
         Made by ramonmcros. Fork it on <a href="https://github.com/ramonmcros/skeletor-syntax">Github</a>.
         Distributed under <a href="license.html">MIT License</a>.
@@ -49,6 +52,62 @@
         <h3>Screenshots</h3>
         <img class="screenshot" src="https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/atom-screenshot1.png"/>
         <img class="screenshot" src="https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/atom-screenshot2.png"/>
+      </section>
+    </article>
+    <article>
+      <h2>Prism</h2>
+      <section>
+        <h3>Languages and plugins</h3>
+        <p>
+          Currently supporting the following languages and plugins:
+        </p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass (SCSS syntax)</li>
+          <li>Javascript</li>
+          <li>PHP</li>
+          <li>Markdown</li>
+          <li>YAML</li>
+        </ul>
+        <ul>
+          <li><a href="http://prismjs.com/plugins/line-numbers/" target="_blank">Line Numbers</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Examples</h3>
+        <p>
+          Click <a href="prism.html">here</a> to see some examples.
+        </p>
+      </section>
+      <section>
+        <h3>Installation</h3>
+        <ol>
+          <li>
+            <p>
+              <a href="https://github.com/ramonmcros/skeletor-syntax/archive/master.zip">Download</a> the theme.
+            <p>
+          </li>
+          <li>
+            <p>
+              Link <code>prism.js</code> and <code>prism-skeletor.css</code>.
+            </p>
+          </li>
+        </ol>
+        <pre class="language-markup"><code>
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+...
+  &lt;link href="css/skeletor-prism.css" rel="stylesheet" />
+&lt;/head>
+&lt;body>
+...
+  &lt;!-- after all your content -->
+  &lt;script src="prism.js"></script>
+&lt;/body>
+&lt;/html>
+        </code></pre>
       </section>
     </article>
     <article>
@@ -92,5 +151,6 @@
       </section>
     </article>
   </div>
+  <script type="text/javascript" src="js/prism.js"></script>
 </body>
 </html>

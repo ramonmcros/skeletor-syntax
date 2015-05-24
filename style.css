@@ -323,13 +323,6 @@ a:hover {
   color: #f3e4a2;
 }
 
-ul {
-  list-style: none;
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 0;
-}
-
 ol,
 ul {
   color: #331C64;
@@ -363,6 +356,17 @@ code {
   font-family: "liberation_monoregular", Courier;
 }
 
+pre[class*="language-"] {
+  border-radius: 0 !important;
+  line-height: 1.2 !important;
+}
+
+pre code {
+  background: #2b2836;
+  font-size: 20px;
+  display: block;
+}
+
 .skeletor {
   display: block;
   margin-left: auto;
@@ -371,6 +375,9 @@ code {
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.skeletor:hover {
+  opacity: 0.6;
 }
 
 .title {
@@ -419,6 +426,10 @@ article:last-child {
   .frame {
     margin: 40px 10px 60px 10px;
   }
+}
+
+.prism-page .skeletor {
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
