@@ -21,18 +21,25 @@
       <p>
         To use this language, use the class <code>language-markup</code>.
       </p>
-      <h3>Markup</h3>
+      <h3>Embedded JS and CSS</h3>
       <pre class="language-markup"><code>
-&lt;!DOCTYPE html>
-&lt;html>
+&lt;html lang="en">
 &lt;head>
-...
-&lt;link href="css/skeletor-prism.css" rel="stylesheet" />
+  &lt;meta charset="utf-8" />
+  &lt;title>I can haz embedded CSS and JS&lt;/title>
+  &lt;style>
+    @media print {
+      p { color: red !important; }
+    }
+  &lt;/style>
 &lt;/head>
 &lt;body>
-...
-&lt;!-- after all your content -->
-&lt;script src="prism.js"></script>
+  &lt;h1>I can haz embedded CSS and JS</h1>
+  &lt;script>
+    if (true) {
+      console.log('foo');
+    }
+  &lt;/script>
 &lt;/body>
 &lt;/html></code></pre>
       <h3>Namespaces</h3>
