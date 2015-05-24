@@ -1,0 +1,256 @@
+/* Skeletor Syntax 0.3.0
+ *
+ * https://github.com/ramonmcros/skeletor-syntax
+ *
+ * Code licensed under the MIT license
+ */
+
+$white: #fff;
+$very-light-gray: #c5c8c6;
+$light-blue: #dce7fd;
+$blue-gray: #7b94a5;
+$blue: #93b4ff;
+$purple: #bd93f9;
+$orchid: #ff8adb;
+$yellow: #f3e4a2;
+$orange: #ffb793;
+$red: #f36a66;
+$green: #84fba2;
+$background: #2b2836;
+$comments: lighten($background, 25%);
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: $light-blue;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: $background;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: $comments;
+}
+
+.token.punctuation {
+	color: $light-blue;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.string,
+.token.attr-value,
+.token.property,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: $blue;
+}
+
+.token.attr-name {
+	color: $purple;
+}
+
+.token.boolean,
+.token.number {
+	color: $orchid;
+}
+
+.token.operator,
+.token.tag,
+.token.char,
+.token.atrule,
+.token.builtin,
+.token.inserted {
+	color: $yellow;
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: $light-blue;
+}
+
+.token.selector,
+.token.function {
+	color: $purple;
+}
+
+.token.keyword {
+	color: $purple;
+}
+
+.token.regex {
+  color: $green;
+}
+.token.important {
+	color: $orchid;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.language-javascript {
+  color: $light-blue;
+}
+
+.language-css {
+	.token.url {
+		color: $green;
+	}
+}
+
+.language-scss {
+	.token.string {
+		color: $light-blue;
+	}
+	.token.keyword {
+		color: $yellow;
+	}
+
+	.token.variable {
+		color: $green;
+	}
+}
+
+.language-javascript {
+  .token.keyword {
+    color: $yellow;
+  }
+
+  .token.class-name {
+    color: $blue;
+  }
+}
+
+.language-php {
+	.token.keyword {
+		color: $green;
+	}
+
+	.token.constant {
+		color: $orchid;
+	}
+
+	.token.delimiter {
+		color: $blue-gray;
+	}
+}
+
+.language-yaml {
+	.token.scalar.string {
+		color: $blue;
+	}
+	.token.atrule {
+		color: $purple;
+	}
+	.token.important {
+		color: $green;
+	}
+}
+
+.language-markdown {
+	.token.title.important {
+		color: $purple;
+	}
+
+	.token.code {
+		color: $green;
+	}
+
+	.token.url {
+		color: $blue;
+
+		.variable {
+			color: $yellow;
+		}
+	}
+}
+
+pre.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+	position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid lighten($background, 25%);
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: lighten($background, 25%);
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
