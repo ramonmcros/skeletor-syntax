@@ -18,7 +18,7 @@ A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com) and 
 
 ### Installation
 
-1. After opening Atom go to `Settings` by pressing `cmd - ,` (`ctrl - ,` on
+1. After opening Atom go to `Settings` by pressing <kbd>cmd</kbd> + <kbd>,</kbd> (<kbd>ctrl</kbd> + <kbd>,</kbd> on
   Linux).
 
 2. Select the `Themes` tab.
@@ -65,7 +65,13 @@ A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com) and 
 
 ### Plugins
 
-* [Line Numbers](http://http://prismjs.com/plugins/line-numbers/)
+* [Line Numbers](http://prismjs.com/plugins/line-numbers/)
+
+### Screenshots
+
+![prism-screenshot1](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/prism-screenshot1.png)
+
+Click [here](http://ramonmcros.github.io/skeletor-syntax/prism.html) to see more examples.
 
 ## Zsh
 
