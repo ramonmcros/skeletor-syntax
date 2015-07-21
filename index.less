@@ -497,25 +497,21 @@ atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow {
   color: @purple;
 }
 
-.meta.structure.dictionary.dictionary.json {
-  .string.quoted.double.json {
-    color: @light-blue;
+.json {
 
-    .punctuation.definition.string.end.json,
-    .punctuation.definition.string.begin.json {
+	.structure.dictionary {
+
+    .string.quoted.double {
+		  color: @blue;
+    }
+
+    .punctuation.definition.string {
       color: @purple;
     }
   }
-}
 
-.meta.structure.dictionary.dictionary.value.json {
-  .string.quoted.double.json {
-    color: @blue;
-
-    .punctuation.definition.string.end.json,
-    .punctuation.definition.string.begin.json {
-      color: @yellow;
-    }
+	.structure.dictionary.value > .string.quoted.double {
+    color: @light-blue;
   }
 }
 
