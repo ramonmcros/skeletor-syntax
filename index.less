@@ -80,6 +80,11 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .entity {
   &.name {
+
+    &.tag.mustache,
+    &.function.mustache {
+      color: @green;
+    }
     &.type {
       color: @blue;
     }
@@ -95,7 +100,7 @@ atom-text-editor .search-results .marker.current-result .region,
         color: @purple;
       }
     }
-}
+  }
 
   &.other.inherited-class {
     color: @blue-gray;
