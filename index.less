@@ -548,6 +548,15 @@ atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow {
   }
 }
 
+// Requires processing-language package: https://atom.io/packages/processing-language
+.entity.name.function.processing {
+  color: @purple;
+}
+
+.constant.numeric.processing {
+  color: @orchid;
+}
+
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
