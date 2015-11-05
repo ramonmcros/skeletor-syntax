@@ -1,6 +1,6 @@
 # Skeletor Syntax
 
-A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com) and [Zsh](http://www.zsh.org) inspired by Skeletor from He-Man and the Masters of the Universe.
+A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com), [Pygments](http://pygments.org/) and [Zsh](http://www.zsh.org) inspired by Skeletor from He-Man and the Masters of the Universe.
 
 **[http://ramonmcros.github.io/skeletor-syntax/](http://ramonmcros.github.io/skeletor-syntax/)**
 
@@ -11,6 +11,7 @@ A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com) and 
 
 * [Atom](#atom)
 * [Prism](#prism)
+* [Pygments](#pygments)
 * [Zsh](#zsh)
 * [Credits](#credits)
 
@@ -72,6 +73,12 @@ A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com) and 
 ![prism-screenshot1](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/prism-screenshot1.png)
 
 Click [here](http://ramonmcros.github.io/skeletor-syntax/prism.html) to see more examples.
+
+## Pygments
+
+### Screenshots
+
+![pygments-screenshot1](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/pygments-screenshot1.png)
 
 ## Zsh
 
