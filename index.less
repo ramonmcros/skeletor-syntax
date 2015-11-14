@@ -151,7 +151,6 @@ atom-text-editor .search-results .marker.current-result .region,
   &.sql,
   &.jade {
     color: @green;
-    font-style: italic;
   }
 }
 
@@ -569,6 +568,15 @@ atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow {
   color: @purple;
 }
 
+// Requires language-jade package https://atom.io/packages/language-jade
+
+.entity.other.attribute-name.id.jade {
+  color: @blue-gray;
+}
+
+.meta.control.flow.jade .storage.function.type.jade {
+  font-style: normal;
+}
 
 // Requires processing-language package: https://atom.io/packages/processing-language
 .entity.name.function.processing {
