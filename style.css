@@ -361,6 +361,11 @@ pre[class*="language-"] {
   line-height: 1.2 !important;
 }
 
+pre {
+  max-width: 769px;
+  margin: 12px auto !important;
+  display: block;
+}
 pre code {
   background: #2b2836;
   font-size: 20px;

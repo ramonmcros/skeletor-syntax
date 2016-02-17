@@ -135,6 +135,9 @@ pre[class*="language-"] {
 }
 
 pre {
+  max-width: 769px;
+  margin: 12px auto !important;
+  display: block;
   code {
     background: $color-code-background;
     font-size: 20px;
