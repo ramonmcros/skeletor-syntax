@@ -139,5 +139,9 @@ pre {
     background: $color-code-background;
     font-size: 20px;
     display: block;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 }
