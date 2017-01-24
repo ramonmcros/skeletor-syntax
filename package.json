@@ -1,7 +1,7 @@
 {
   "name": "skeletor-syntax",
   "theme": "syntax",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A dark theme for Atom inspired by Skeletor from He-Man and the Masters of the Universe",
   "repository": "https://github.com/ramonmcros/skeletor-syntax",
   "license": "MIT",
