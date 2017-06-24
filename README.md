@@ -38,12 +38,12 @@ A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com), [Py
 ### Installation
 1. [Download](https://github.com/ramonmcros/skeletor-syntax/archive/master.zip) the theme.
 2. Depending on your OS and editor, move the _Skeletor.icls_ file to the appropriate `colors` folder inside the [IDE's configuration directory](https://www.jetbrains.com/help/pycharm/project-and-ide-settings.html#d412135e81).
-  * Substitute the name and version of the IDE _(e.g. PyCharm2017.1, WebStorm2016.3, etc.)_ for _$(Jetbrains IDE)_ below.
+    - Substitute the name and version of the IDE _(e.g. PyCharm2017.1, WebStorm2016.3, etc.)_ for _$(Jetbrains IDE)_ below.
 
 
 - **Linux:**  ~/_.$(Jetbrains IDE)_/config
 - **macOS:** ~/Library/Preferences/_$(Jetbrains IDE)_
-- **Windows:** %USERPROFILE%\\._$(Jetbrains IDE)_\config
+- **Windows:** %USERPROFILE%\\._$(Jetbrains IDE)_\\config
 
 ### Screenshots
 ![jetbrains-screenshot1](./screenshots/jetbrains-screenshot1.png)
