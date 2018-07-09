@@ -1,6 +1,6 @@
 # Skeletor Syntax
 
-A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com), [Pygments](http://pygments.org/) and [Zsh](http://www.zsh.org) inspired by Skeletor from He-Man and the Masters of the Universe.
+A dark theme for [Atom](http://atom.io) inspired by Skeletor from He-Man and the Masters of the Universe.
 
 **[http://ramonmcros.github.io/skeletor-syntax/](http://ramonmcros.github.io/skeletor-syntax/)**
 
@@ -9,13 +9,11 @@ A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com), [Py
 
 ## Table of contents
 
-* [Atom](#atom)
-* [Prism](#prism)
-* [Pygments](#pygments)
-* [Zsh](#zsh)
+* [Installation](#installation)
+* [Color Palette](#color-palette)
+* [Ports](#ports)
 * [Credits](#credits)
 
-## Atom
 
 ### Installation
 
@@ -31,74 +29,6 @@ A dark theme for [Atom](http://atom.io), [Prism](http://http://prismjs.com), [Py
 ![atom-screenshot1](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/atom-screenshot1.png)
 
 ![atom-screenshot2](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/atom-screenshot2.png)
-
-## Prism
-
-### Installation
-1. [Download](https://github.com/ramonmcros/skeletor-syntax/archive/master.zip) the theme.
-
-2. Link `prism.js` and `prism-skeletor.css`.
-
-```
-<!DOCTYPE html>
-<html>
-<head>
- ...
-    <link href="css/skeletor-prism.css" rel="stylesheet" />
-</head>
-<body>
- ...
-    <!-- after all your content -->
-    <script src="prism.js"></script>
-</body>
-</html>
-```
-
-### Supported Languages
-
-* HTML
-* CSS
-* Sass (SCSS syntax)
-* Javascript
-* PHP
-* Markdown
-* YAML
-
-### Plugins
-
-* [Line Numbers](http://prismjs.com/plugins/line-numbers/)
-
-### Screenshots
-
-![prism-screenshot1](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/prism-screenshot1.png)
-
-Click [here](http://ramonmcros.github.io/skeletor-syntax/prism.html) to see more examples.
-
-## Pygments
-
-### Screenshots
-
-![pygments-screenshot1](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/pygments-screenshot1.png)
-
-## Zsh
-
-### Requirements
-
-Requires a terminal with 256 colors support.
-
-### Installation
-
-1. [Download](https://github.com/ramonmcros/skeletor-syntax/archive/master.zip) the theme.
-
-2. Move the `zsh/skeletor.zsh-theme` file to [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)'s theme folder: `oh-my-zsh/themes/skeletor.zsh-theme`.
-
-3. Open your `~.zshrc` file and set `ZSH_THEME="skeletor"`.
-
-4. Restart the terminal.
-
-### Screenshots
-
-![zsh-screenshot1](https://raw.githubusercontent.com/ramonmcros/skeletor-syntax/master/screenshots/zsh-screenshot1.png)
 
 ## Color Palette
 
@@ -118,10 +48,15 @@ Requires a terminal with 256 colors support.
  Background       | #2b2836          | 43 40 54         | 253° 15% 18%
  Comments         | #655e7f          | 101 94 127       | 253° 15% 43%
 
+
+## Ports
+
+### Vim
+
+A Vim port made and mantained by [@skreek](https://github.com/skreek) can be found [here](https://github.com/skreek/skeletor.vim)
+
 ## Credits
 
 * Theme inspired by [Skeletor](http://en.wikipedia.org/wiki/Skeletor) and [@zenorocha's dracula-theme](https://github.com/zenorocha/dracula-theme).
 
 * Increased font sizes for headers taken from [@nylki's pen-paper-coffee-syntax](https://github.com/nylki/pen-paper-coffee-syntax).
-
-* ZSH theme based on [@robbyrussell's theme](https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/robbyrussell.zsh-theme).
